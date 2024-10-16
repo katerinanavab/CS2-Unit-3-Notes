@@ -22,5 +22,23 @@ public class Main {
       System.out.println(pi >= 3.14); // true
       System.out.println(pi <= 10); // true
 
+
+      // IF STATEMENTS
+      boolean isCold = false;
+      if (isCold == true) {
+         System.out.println("Bring a jacket!");
+      }
+      System.out.println("Enjoy your walk!");
+
+      // Magic-8 Ball Mini Program
+      // 1. Generate random integer between 1-8
+      double randDoub = Math.random() * 8 + 1; // adjust the output range
+      int randInt = (int) randDoub; // CASTING types
+
+      // 2. Use that number in 8 if statements to print a different response
+      if (randInt == 1) {
+         System.out.println("It's not looking good buddy...");
+      }
+
    }
 }
