@@ -39,6 +39,43 @@ public class Main {
       if (randInt == 1) {
          System.out.println("It's not looking good buddy...");
       }
+      // every "if block" is like starting a new line of questioning
+      if (randInt == 2) {
+         System.out.println("Oh for sure!");
+      }
+
+      // TWO-WAY SELECTION: IF block coupled with an ELSE block
+      // is like "if this is true, do something", OTHERWISE, "do something else"
+      int myAge = 16;
+      // BOOLEAN EXPRESSION here is "myAge >= 17"
+      if (myAge >= 17) {
+         System.out.println("You can get your license in NY!");
+      }
+      // else is coupled with the if statement above
+      // so you do NOT need to specify a CONDITION/EXPRESSION
+      else {
+         System.out.println("You're too young to drive in NY");
+      }
+      
+      // MULTI-WAY SELECTION
+      System.out.println("What type of costume are you thinking of? (scary, cute, funny, other)");
+      String choice = "scary";
+      // Always start a "decision" with an IF statement
+      if (choice.equals("scary")) {
+         System.out.println("You should be a FINAL EXAM!");
+      }
+      // You can include as many ELSE IF statements as you want
+      // but they must follow an initial IF statement
+      else if (choice.equals("cute")) {
+         System.out.println("You should be a PRINCESS!");
+      }
+      else if (choice.equals("funny")) {
+         System.out.println("You should be a INFLATABLE DINOSAUR!");
+      }
+      // Provide a "catch-all" choice in case earlier conditions are not met
+      else {
+         System.out.println("I literally don't know. Look on Pinterest?");
+      }
 
    }
 }
