@@ -77,5 +77,35 @@ public class Main {
          System.out.println("I literally don't know. Look on Pinterest?");
       }
 
+      
+      // AND && Operator
+      // Both conditions need to be true for the conditional body to be executed
+      boolean didHomework = false;
+      boolean cleanedRoom = true;
+      // can write the conditions either way below,
+      // both are valid because we're using boolean variables already
+      if ((didHomework == true) && (cleanedRoom)) {
+         System.out.println("You can go out!");
+      }
+      else {
+         System.out.println("You're grounded!");
+      }
+      // OR || Operator
+      // Evaluates to TRUE if AT LEAST one expression is true
+      if ( (didHomework) || (cleanedRoom) ) {
+         System.out.println("The more permissive parents say sure, go out and finish anything else later!");
+      }
+      else {
+         System.out.println("No, you need to do at least one of your tasks first.");
+      }
+
+      // NOT ! Operator
+      // Use this on just ONE condition to flip the boolean result
+      boolean walkSignOn = true;
+      // Condition body will execute only if condition is FALSE
+      if (!walkSignOn) {
+         System.out.println("STOP CROSSING THE STREET!!!");
+      }
+      
    }
 }
